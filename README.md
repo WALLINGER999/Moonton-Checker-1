@@ -1,16 +1,19 @@
 # Moonton Account Checker
 
 A Python tool for verifying Moonton accounts.
+
 ## Features
 
 - **Account Verification**: Checks if Moonton account credentials are valid.
 - **Detailed Account Status**: Displays account statuses like successful login, incorrect password, or account not found.
-- **Save Results**: Exports successful logins.
+- **Proxy Support**: Allows checking accounts using proxies.
+- **Save Results**: Exports successful logins and other statuses to files.
 
 ## Installation
 
 ### Prerequisites
 - **Python 3.8+**
+- **Linux/Windows/Mac** (Note: Not tested on all platforms)
 
 ### Installation Steps
 1. Clone this repository:
@@ -40,7 +43,17 @@ A Python tool for verifying Moonton accounts.
    python main.py
    ```
 
-3. **Input the Filename**: When prompted, provide the filename (e.g., `list.txt`), and the script will begin checking accounts.
+3. **Input the License Key**: Upon starting, you will be prompted to enter a license key. Enter the valid key to proceed.
+
+4. **Choose an Option**:
+   - **1. Check Proxies**: Verify the functionality of proxies listed in a file.
+   - **2. Run Checker**: Start checking the accounts from the provided list.
+   - **3. Exit**: Exit the script.
+
+5. **Additional Prompts for Account Checking**:
+   - **Proxy Usage**: Choose whether to use proxies for checking accounts.
+   - **Retry Attempts**: Specify the number of retries for accounts that return errors.
+   - **Output File Name**: Define a base name for the output files.
 
 ## Example Output
 
@@ -48,29 +61,39 @@ A Python tool for verifying Moonton accounts.
 Moonton Checker
 Developed by: Findme-19
 
-🤩 [SUCCESS] - user1@example.com
-😞 [ERROR] - Incorrect password for user2@example.com
-🤔 [NOT FOUND] - Account does not exist for user3@example.com
+[SUCCESS] - user1@example.com
+[WARNING] - Incorrect password for user2@example.com
+[WARNING] - Account does not exist for user3@example.com
 
-✨ Final Summary ✨
+[INFO] Final Summary
 Total Accounts: 100
-🤩 Success: 30
-😞 Incorrect Password: 50
-🤔 No Account: 15
-❓ Other Responses: 5
+[SUCCESS] Success: 30
+[WARNING] Incorrect Password: 50
+[WARNING] No Account: 15
+[WARNING] Other Responses: 5
 ```
 
-## Screenshot
+## Screenshots
 
-### Start Menu
-<img src="preview/START.jpg" alt="Start Menu" width="400" />
-
----
-
-### Progress
-<img src="preview/MID.jpg" alt="Checking" width="400" />
+### Start
+<img src="preview/START.png" alt="Start Menu" width="400" />
 
 ---
 
-### Output
-<img src="preview/END.jpg" alt="Output" width="400" />
+### MENU
+<img src="preview/MENU.png" alt="Checking" width="400" />
+
+---
+
+### PROXY
+<img src="preview/PROXY.png" alt="proxy" width="400" />
+
+---
+### END
+<img src="preview/END.png" alt="Output" width="400" />
+
+## Notes
+- Ensure that the license key is valid to access the tool.
+- The tool is primarily designed for Linux, Windows, and Mac, but has not been tested on all platforms.
+- Results are saved in text files for further analysis.
+- Contact me on [Telegram](https://t.me/yangbenerwoy) to get license key
