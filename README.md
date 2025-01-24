@@ -14,7 +14,6 @@ A Python tool for verifying Moonton accounts.
 ### Prerequisites
 - **Python 3.8+**
 - **Linux/Windows/Mac** (Note: Not tested on all platforms)
-
 ### Installation Steps
 1. Clone this repository:
    ```bash
@@ -92,7 +91,16 @@ Total Accounts: 100
 ### END
 <img src="preview/END.png" alt="Output" width="400" />
 
+## Donation
+
+If you find this tool useful and would like to support the developer, you can donate via PayPal:
+
+[![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/uafk)
+
+Your support is greatly appreciated!
+
 ## Notes
+- **Android/Termux** not supported
 - Ensure that the license key is valid to access the tool.
 - The tool is primarily designed for Linux, Windows, and Mac, but has not been tested on all platforms.
 - Results are saved in text files for further analysis.
