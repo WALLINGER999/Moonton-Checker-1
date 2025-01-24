@@ -1,3 +1,4 @@
 httpx
 rich
 pyfiglet
+httpx[socks]
